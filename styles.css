@@ -1,0 +1,180 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px auto;
+    /* Added 'auto' to center the content horizontally */
+    max-width: 800px;
+    /* Adjust the maximum width as desired */
+    padding: 0 20px;
+    /* Added padding for better readability */
+    box-sizing: border-box;
+    /* Ensures padding is included in the max width */
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+main {
+    margin-top: 20px;
+}
+
+.habit-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.habit-form form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.habit-form form input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.habit-form form button {
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.habit-form form button:hover {
+    background-color: #555;
+}
+
+.habit-list {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.habit-list ul {
+    list-style-type: none;
+}
+
+.habit-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.habit-list li select {
+    padding: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+}
+
+/* styles.css */
+
+/* ... (Previous styles remain unchanged) */
+
+/* Style for the past 7 days' habit statuses */
+.past-status {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.past-status-item {
+    width: calc(14.28% - 10px);
+    /* Adjust width for 7 boxes in a row */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    /* Add position relative for pseudo-element */
+}
+
+/* Colors for different habit statuses */
+.past-status-item.done {
+    background-color: lightgreen;
+    /* Green for Done */
+}
+
+.past-status-item.not-done {
+    background-color: lightcoral;
+    /* Red for Not Done */
+}
+
+.past-status-item.none {
+    background-color: yellow;
+    /* Yellow for None */
+}
+
+/* styles.css */
+
+/* ... (Previous styles remain unchanged) */
+
+/* Symbol for Done and Not Done statuses */
+.past-status-item.done::after {
+    content: '\2714';
+    /* Checkmark symbol for Done status */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.past-status-item.not-done::after {
+    content: '\2718';
+    /* Cross mark symbol for Not Done status */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

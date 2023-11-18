@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/habits">Habits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="habit-form">
+            <h2>Add a New Habit</h2>
+            <form id="addHabitForm">
+                <label for="habitName">Habit Name:</label>
+                <input type="text" id="habitName" name="habitName" required>
+                <button type="submit">Add Habit</button>
+            </form>
+        </section>
+
+        <section class="habit-list">
+            <h2>Your Habits</h2>
+            <div id="habitsList">
+                <!-- Habit items will be generated here dynamically using JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
